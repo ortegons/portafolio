@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --color-primario: #13EB00;
+    --color-secundario: #B000E6;
+    --color-secundario-acento: #272727;
+
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+
+}
+
+.header_menu{
+    display: flex;
+    gap: 80px;
+
+}
+
+.header_menu_link{
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: var(--color-primario);
+    text-decoration: none;
+   
+}
+
+.header_menu_link:hover{
+    color: var(--color-secundario);
+
+}
+
+
+body {
+    background-color: #000000 ;
+    color: #f6f6f6;
+    box-sizing: border-box;
+}
+strong {
+    color: var(--color-primario);
+}
+
+.name{
+    color: var(--color-primario) ;
+}
+
+.presentacion{
+    display: flex;
+    align-items: center;
+    padding: 4% 15%;
+    gap: 82px;
+    justify-content: space-between;;
+}
+
+.presentacion_contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+   
+}
+
+.presentacion_contenido_titulo{
+    font-family: 'Krona One', sans-serif;
+    font-size: 2.25rem;
+}
+
+.presentacion_contenido_texto{
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.presentacion_enlaces{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.presentacion_enlaces_boton{
+    width: 50%;
+    background-color: #000000;
+    text-align: center;
+    padding: 1.4rem 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid var(--color-primario);
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.presentacion_enlaces_boton:hover{
+    background-color: var(--color-secundario-acento);
+    border: 2px solid var(--color-secundario);
+
+
+}
+.presentacion_enlaces_subtitulo{
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.footer{
+    background-color: var(--color-primario);
+    padding: 0.9rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.imagen_presentacion{
+    width: 50%;
+}
+
+@media (max-width: 1400px){
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacion_contenido{
+        width: auto;
+    }
+    .imagen_presentacion{
+        width: 75%;
+    }
+
+    .header{
+        padding: 10%;
+    }
+
+    .header_menu{
+        justify-content: center;
+    }
+}
